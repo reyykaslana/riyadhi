@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusTicket - Jual Tiket Bus Online</title>
+    <rel="stylesheet" href="style.css">
+    <style>      
+ body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #007bff; color: white; padding: 20px; text-align: center; display: flex; align-items: center; justify-content: center; }
+        .logo { width: 50px; height: 50px; margin-right: 10px; }
+        .hero { background-image: url('https://via.placeholder.com/1200x400?text=Bus+Travel'); background-size: cover; padding: 100px 20px; text-align: center; color: white; }
+        .hero h1 { font-size: 3em; margin: 0; }
+        .hero p { font-size: 1.2em; margin: 20px 0; }
+        .btn { background-color: #28a745; color: white; padding: 10px 20px; border: none; cursor: pointer; font-size: 1em; }
+        .btn:hover { background-color: #218838; }
+        .features { padding: 50px 20px; text-align: center; }
+        .feature { display: inline-block; width: 30%; margin: 20px; vertical-align: top; }
+        .pricing { padding: 50px 20px; text-align: center; background-color: #fff; }
+        .price-card { display: inline-block; width: 30%; margin: 20px; padding: 20px; border: 1px solid #ddd; border-radius: 8px; vertical-align: top; }
+        .price-card h3 { color: #007bff; }
+        .price-card .price { font-size: 2em; font-weight: bold; color: #28a745; }
+        .testimonials { background-color: #e9ecef; padding: 50px 20px; text-align: center; }
+        .testimonial { display: inline-block; width: 30%; margin: 20px; }
+        footer { background-color: #343a40; color: white; padding: 20px; text-align: center; }
+        @media (max-width: 768px) { .feature, .testimonial, .price-card { width: 100%; } header { flex-direction: column; } .logo { margin-bottom: 10px; } }
+    </style></head>
+<body>
+    <header>
+        <svg class="logo" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 16c0 .88.39 1.67 1 2.22V20c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h8v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4v10zm3.5 1c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM6 11h12V6H6v5z"/>
+        </svg>
+        <div>
+            <h1>BusTicket</h1>
+            <p>Platform Terpercaya untuk Membeli Tiket Bus Online</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Perjalanan Nyaman, Harga Terjangkau</h1>
+        <p>Cari dan pesan tiket bus ke berbagai destinasi di Indonesia dengan mudah.</p>
+        <button class="btn" onclick="alert('Fitur pencarian akan diintegrasikan dengan backend')">Cari Tiket Sekarang</button>
+    </section>
+
+    <section class="features">
+        <h2>Kenapa Memilih Kami?</h2>
+        <div class="feature">
+            <h3>Beragam Rute</h3>
+            <p>Tersedia rute ke lebih dari 100 kota di seluruh Indonesia.</p>
+        </div>
+        <div class="feature">
+            <h3>Harga Kompetitif</h3>
+            <p>Dapatkan diskon hingga 20% untuk pemesanan awal.</p>
+        </div>
+        <div class="feature">
+            <h3>Pembayaran Aman</h3>
+            <p>Bayar dengan berbagai metode, termasuk e-wallet dan transfer bank.</p>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h2>Paket Harga Tiket Bus (Jakarta - Surabaya)</h2>
+        <div class="price-card">
+            <h3>Ekonomi</h3>
+            <p class="price">Rp 100.000</p>
+            <p>Tempat duduk standar, WiFi gratis, AC.</p>
+            <button class="btn" onclick="alert('Pesan tiket Ekonomi')">Pesan Sekarang</button>
+        </div>
+        <div class="price-card">
+            <h3>Bisnis</h3>
+            <p class="price">Rp 200.000</p>
+            <p>Tempat duduk lebih luas, snack gratis, prioritas boarding.</p>
+            <button class="btn" onclick="alert('Pesan tiket Bisnis')">Pesan Sekarang</button>
+        </div>
+        <div class="price-card">
+            <h3>VIP</h3>
+            <p class="price">Rp 300.000</p>
+            <p>Tempat duduk recliner, makan malam, layanan premium.</p>
+            <button class="btn" onclick="alert('Pesan tiket VIP')">Pesan Sekarang</button>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Testimoni Pelanggan</h2>
+        <div class="testimonial">
+            <p>"Mudah dan cepat! Tiket bus saya selalu tepat waktu."</p>
+            <cite>- Ahmad, Jakarta</cite>
+        </div>
+        <div class="testimonial">
+            <p>"Harga murah dan layanan pelanggan responsif."</p>
+            <cite>- Siti, Surabaya</cite>
+        </div>
+        <div class="testimonial">
+            <p>"Rekomendasi untuk perjalanan keluarga."</p>
+            <cite>- Budi, Bandung</cite>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 BusTicket. Semua hak dilindungi. | Hubungi: info@busticket.com</p>
+    </footer>
+
+    <script>
+        // Contoh JavaScript sederhana untuk interaktivitas
+        document.querySelector('.btn').addEventListener('click', function() {
+            alert('Ini adalah demo. Integrasikan dengan API untuk pencarian tiket.');
+        });
+    </script>
+</body>
+</html>
